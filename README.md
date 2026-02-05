@@ -10,11 +10,11 @@ Code for the paper: **Stage-Adaptive Knowledge Distillation via KL-Wasserstein H
 
 <div style="display: flex; flex-wrap: wrap; gap: 10px;">
   <div style="flex: 1 1 48%;">
-    <img src="figures/loss_kl.png" width="100%" />  
+    <img src="figures/loss_kl.png" width="48%" />  
     <p>*Fig. 2: Loss evolution of WKL compared with KL and WKD during distillation on CIFAR-100 for the ResNet32×4 → ResNet8×4 setting (Part 1).*</p>
   </div>
   <div style="flex: 1 1 48%;">
-    <img src="figures/loss_tc.png" width="100%" />  
+    <img src="figures/loss_tc.png" width="48%" />  
     <p>*Fig. 3: Loss evolution of WKL compared with KL and WKD during distillation on CIFAR-100 for the ResNet32×4 → ResNet8×4 setting (Part 2).*</p>
   </div>
 </div>
