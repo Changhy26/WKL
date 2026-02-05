@@ -10,11 +10,11 @@ Code for the paper: **Stage-Adaptive Knowledge Distillation via KL-Wasserstein H
 
 <div style="display: flex; flex-wrap: wrap; gap: 10px;"> 
   <div style="flex: 1 1 48%;">
-    <img src="figures/loss_kl.png" width="48%" />  
+    <img src="figures/loss_kl.png" width="20%" />  
     <p>(a) loss_kl</p>
   </div>
   <div style="flex: 1 1 48%;">
-    <img src="figures/loss_tc.png" width="48%" />  
+    <img src="figures/loss_tc.png" width="20%" />  
     <p>(b) loss_tc</p>
   </div>
 </div>
