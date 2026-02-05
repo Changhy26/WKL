@@ -8,7 +8,7 @@ Code for the paper: **Stage-Adaptive Knowledge Distillation via KL-Wasserstein H
 
 ### Loss Evolution Analysis
 
-<div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: space-between;"> 
+<div style="display: flex; flex-wrap: wrap; gap: 10px;"> 
   <div style="flex: 0 0 48%;">
     <img src="figures/loss_kl.png" width="100%" />  
     <p>(a) loss_kl</p>
@@ -19,7 +19,7 @@ Code for the paper: **Stage-Adaptive Knowledge Distillation via KL-Wasserstein H
   </div>
 </div>
 
-<div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: space-between;">
+<div style="display: flex; flex-wrap: wrap; gap: 10px;">
   <div style="flex: 0 0 48%;">
     <img src="figures/loss_nc.png" width="100%" />  
     <p>(c) loss_nc</p>
