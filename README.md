@@ -8,24 +8,10 @@ Code for the paper: **Stage-Adaptive Knowledge Distillation via KL-Wasserstein H
 
 ### Loss Evolution Analysis
 
-<div style="display: flex; flex-wrap: wrap; gap: 10px;"> 
-  <div style="flex: 0 0 48%;">
-    <img src="figures/loss_kl.png" width="100%" />  
-    <p>(a) loss_kl</p>
-  </div>
-  <div style="flex: 0 0 48%;">
-    <img src="figures/loss_tc.png" width="100%" />  
-    <p>(b) loss_tc</p>
-  </div>
-</div>
+![Fig. 2](figures/loss_kl.png) ![Fig. 3](figures/loss_tc.png)  
+*Fig. 2: Loss evolution of WKL compared with KL and WKD during distillation on CIFAR-100 for the ResNet32×4 → ResNet8×4 setting (Part 1).*  
+*Fig. 3: Loss evolution of WKL compared with KL and WKD during distillation on CIFAR-100 for the ResNet32×4 → ResNet8×4 setting (Part 2).*
 
-<div style="display: flex; flex-wrap: wrap; gap: 10px;">
-  <div style="flex: 0 0 48%;">
-    <img src="figures/loss_nc.png" width="100%" />  
-    <p>(c) loss_nc</p>
-  </div>
-  <div style="flex: 0 0 48%;">
-    <img src="figures/loss_w.png" width="100%" />  
-    <p>(d) loss_w</p>
-  </div>
-</div>
+![Fig. 4](figures/loss_nc.png) ![Fig. 5](figures/loss_w.png)  
+*Fig. 4: Loss evolution of WKL compared with KL and WKD during distillation on CIFAR-100 for the ResNet32×4 → ResNet8×4 setting (Part 3).*  
+*Fig. 5: Loss evolution of WKL compared with KL and WKD during distillation on CIFAR-100 for the ResNet32×4 → ResNet8×4 setting (Part 4).*
