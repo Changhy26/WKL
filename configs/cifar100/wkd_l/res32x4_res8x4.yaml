@@ -1,0 +1,37 @@
+EXPERIMENT:
+  NAME: ""
+  TAG: "wkd_l,res32x4,res8x4"
+  PROJECT: "cifar100_baselines"
+  SEED: 42
+DISTILLER:
+  TYPE: "WKD"
+  TEACHER: "resnet32x4"
+  STUDENT: "resnet8x4"
+SOLVER:
+  BATCH_SIZE: 64
+  EPOCHS: 240
+  LR: 0.05
+  LR_DECAY_STAGES: [150, 180, 210]
+  LR_DECAY_RATE: 0.1
+  WEIGHT_DECAY: 0.0005
+  MOMENTUM: 0.9
+  TYPE: "SGD"
+WKD:
+  INPUT_SIZE: (32, 32)
+  LOSS:
+    CE_WEIGHT: 1.0
+    WKD_LOGIT_WEIGHT: 600.0 # {50, 100, 150, 200, 250, 300, 350, 400, 450, 500, 550, 600, 650, 700, 750, 800}
+    WKD_FEAT_WEIGHT: 0.0
+    COSINE_DECAY_EPOCH: 150
+    KL_WEIGHT: 0.5 # {1, 2, 3, 4, 5, 6, 7, 8, 9}
+  SINKHORN:
+    LAMBDA: 0.05
+    ITER: 10
+  COST_MATRIX: 'cka'
+  COST_MATRIX_PATH: "wkd_cost_matrix/cifar100/resnet32x4/linear_cka.pth"
+  COST_MATRIX_SHARPEN: 1.0  # {0.5, 1.0}
+  TEMPERATURE: 8.0 # {2, 4, 6, 8}
+LOG:
+  WANDB: False
+  TENSORBOARD_FREQ: 10
+  SAVE_CHECKPOINT_FREQ: 40

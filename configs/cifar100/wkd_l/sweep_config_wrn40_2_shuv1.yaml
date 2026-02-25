@@ -1,0 +1,29 @@
+# usage
+# 1. sweep_config.yaml
+# 2. wandb sweep --project sweeps_demo config.yaml
+# 3. sweep agent： wandb agent sweep_id
+
+
+program: tools/train.py
+metric:
+  name: best_acc
+  goal: maximize # minimize
+
+method: grid
+
+parameters:
+  WKD.LOSS.WKD_LOGIT_WEIGHT: 
+    values: [150.0, 200.0, 250.0]
+  WKD.COST_MATRIX_SHARPEN: 
+    values: [0.5, 1.0]
+  WKD.TEMPERATURE: 
+    values: [4.0, 6.0, 8.0]
+  WKD.LOSS.KL_WEIGHT:
+    values: [1.0, 2.0, 3.0, 4.0, 5.0]
+
+command:
+- python
+- tools/train.py
+- "--cfg"
+- "configs/cifar100/wkd_l/wrn40_2_shuv1.yaml"
+
